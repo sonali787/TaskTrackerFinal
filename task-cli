@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Move to project directory (so target/classes is found)
+cd /Users/sonaliyadav/Documents/SpringBootProjects/SpringBoot/TaskTracker || exit
+
+
+# Run compiled Java program and forward CLI arguments
+java -cp target/classes org.example.Main "$@"
